@@ -9,7 +9,7 @@
 .project-carousel {
   position: relative;
   width: 300px;
-  height: 400px;
+  min-height: 500px; /* Adjust height to ensure everything fits */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,13 @@
   text-align: center;
   width: 100%;
   max-width: 300px;
-  transition: transform 0.3s ease;
-  position: absolute;
+  height: auto;
+  overflow: auto; /* Ensure content is scrollable if too long */
 }
 
 .project-card img {
   max-width: 100%;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -42,6 +43,7 @@
 .project-card p {
   font-size: 1rem;
   color: #555;
+  overflow-wrap: break-word; /* Ensure long words wrap correctly */
 }
 
 /* Navigation buttons */

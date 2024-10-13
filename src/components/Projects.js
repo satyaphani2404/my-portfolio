@@ -31,7 +31,7 @@ function Projects() {
       title: "Estimation of Dialysis (Machine Learning)",
       description:
         "Classified patients for dialysis initiation using machine learning techniques.",
-      image: "path/to/your/dialysis-estimation-image.jpg",
+      image: `${process.env.PUBLIC_URL}/dialysis.jpg`,
     },
   ];
 
@@ -50,11 +50,17 @@ function Projects() {
   return (
     <section className="projects">
       <h2>Projects</h2>
-      <div className="project-cards">
-        <ProjectCard
-          key={projects[currentProjectIndex].title}
-          project={projects[currentProjectIndex]}
-        />
+      <div className="project-card-stack">
+        {projects.map((project, index) => (
+          <div
+            key={project.title}
+            className={`project-card-wrapper ${
+              index === currentProjectIndex ? "active" : "inactive"
+            }`}
+          >
+            <ProjectCard project={project} />
+          </div>
+        ))}
       </div>
     </section>
   );

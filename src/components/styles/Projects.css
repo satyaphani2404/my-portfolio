@@ -1,10 +1,32 @@
+/* src/styles/Projects.css */
 .projects {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.project-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: center;
+.project-card-stack {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.project-card-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.project-card-wrapper.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card-wrapper.inactive {
+  opacity: 0;
+  transform: scale(0.9);
 }

@@ -1,0 +1,42 @@
+/* src/components/styles/Hero.css */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  color: #777;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.hero-content button:hover {
+  background-color: #0056b3;
+}
+
+.hero img {
+  max-width: 250px; /* Ensure image doesn't overflow */
+  border-radius: 50%;
+  border: 5px solid #007bff; /* Border color */
+}

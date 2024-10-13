@@ -1,0 +1,62 @@
+/* src/styles/Skills.css */
+.skills {
+  padding: 40px; /* Increased padding for better spacing */
+  background-color: #f0f0f0; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px; /* Margin to separate from other sections */
+}
+
+.skills h2 {
+  font-size: 2.5em; /* Larger font size for the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Dark color for visibility */
+}
+
+.skills-category {
+  margin-bottom: 30px; /* Increased space between categories */
+}
+
+.skills-category h3 {
+  font-size: 1.8em; /* Larger font size for subheadings */
+  color: #007bff; /* Color for subheadings to make them stand out */
+  margin-bottom: 10px; /* Space below subheadings */
+  text-transform: uppercase; /* Uppercase for better emphasis */
+}
+
+.skills-category ul {
+  list-style-type: disc; /* Bulleted list */
+  margin: 0;
+  padding-left: 20px; /* Indentation for list */
+}
+
+.skills-category li {
+  font-size: 1.2em; /* Font size for list items */
+  color: #555; /* Slightly lighter color for list items */
+  margin-bottom: 5px; /* Space between list items */
+  transition: color 0.3s; /* Transition effect for hover */
+}
+
+/* Add hover effects for list items */
+.skills-category li:hover {
+  color: #007bff; /* Change color on hover for interactivity */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .skills {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .skills h2 {
+    font-size: 2em; /* Smaller font size for smaller screens */
+  }
+
+  .skills-category h3 {
+    font-size: 1.5em; /* Smaller subheading font size */
+  }
+
+  .skills-category li {
+    font-size: 1em; /* Smaller font size for list items */
+  }
+}

@@ -1,37 +1,28 @@
-/* src/styles/ProjectCard.css */
 .project-card {
-  background-color: white; /* Card background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 15px;
-  text-align: center;
-  width: 250px; /* Fixed width for cards */
+  perspective: 1000px;
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
 }
 
 .project-card img {
-  max-width: 100%; /* Responsive image */
-  border-radius: 8px; /* Rounded image corners */
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .project-card h3 {
-  font-size: 1.5em;
-  margin: 10px 0; /* Margin around the title */
+  margin: 10px 0;
 }
 
 .project-card p {
-  color: #666; /* Lighter text color */
+  font-size: 14px;
 }
 
-.project-card a {
-  display: inline-block; /* Block element for the link */
-  margin-top: 10px; /* Margin above the link */
-  padding: 10px 15px; /* Padding for the link */
-  background-color: #007bff; /* Button color */
-  color: white; /* Text color */
-  border-radius: 5px; /* Rounded button corners */
-  text-decoration: none; /* Remove underline */
-}
-
-.project-card a:hover {
-  background-color: #0056b3; /* Darker button color on hover */
+/* Rotate animation on hover */
+.project-card:hover {
+  transform: rotateY(180deg);
 }

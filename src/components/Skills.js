@@ -9,7 +9,6 @@ function Skills() {
         <h3>Programming Languages:</h3>
         <ul>
           <li>Python</li>
-          <li>DotNet</li>
           <li>SQL</li>
         </ul>
       </div>

@@ -36,14 +36,17 @@ const projects = [
 
 function Projects() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
-  // Handle swipe or click to the left or right
-  const handleSwipe = (direction) => {
-    if (direction === "left") {
+  // Helper function to determine swipe direction
+  const handleSwipe = (newDirection) => {
+    if (newDirection === "left") {
+      setDirection(-1);
       setCurrentProjectIndex((prevIndex) =>
         prevIndex === projects.length - 1 ? 0 : prevIndex + 1
       );
-    } else if (direction === "right") {
+    } else if (newDirection === "right") {
+      setDirection(1);
       setCurrentProjectIndex((prevIndex) =>
         prevIndex === 0 ? projects.length - 1 : prevIndex - 1
       );
@@ -54,7 +57,7 @@ function Projects() {
     <section className="projects">
       <h2>Projects</h2>
       <div className="project-carousel">
-        {/* Left Button for Desktop Users */}
+        {/* Left Button */}
         <button
           className="nav-button left"
           onClick={() => handleSwipe("right")}
@@ -62,16 +65,19 @@ function Projects() {
           ◀
         </button>
 
-        <AnimatePresence exitBeforeEnter>
+        {/* Card */}
+        <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={currentProjectIndex}
             className="project-card"
-            initial={{ opacity: 0, x: 300 }} // Start off-screen
-            animate={{ opacity: 1, x: 0 }} // Animate in from the right
-            exit={{ opacity: 0, x: -300 }} // Exit to the left
-            drag="x" // Enable drag/swipe
-            dragConstraints={{ left: 0, right: 0 }} // Disable dragging outside bounds
-            dragElastic={0.2} // Adds resistance to dragging
+            custom={direction}
+            initial={{ opacity: 0, x: direction > 0 ? -300 : 300 }} // Animates in from the left or right depending on direction
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: direction > 0 ? 300 : -300 }} // Animates out to the opposite side
+            transition={{ duration: 0.6 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.1}
             onDragEnd={(e, { offset, velocity }) => {
               const swipe = offset.x * velocity.x;
 
@@ -88,7 +94,7 @@ function Projects() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Right Button for Desktop Users */}
+        {/* Right Button */}
         <button
           className="nav-button right"
           onClick={() => handleSwipe("left")}

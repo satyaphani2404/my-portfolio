@@ -37,7 +37,7 @@ const projects = [
 function Projects() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 
-  // Handle swipe to the left or right
+  // Handle swipe or click to the left or right
   const handleSwipe = (direction) => {
     if (direction === "left") {
       setCurrentProjectIndex((prevIndex) =>
@@ -54,6 +54,14 @@ function Projects() {
     <section className="projects">
       <h2>Projects</h2>
       <div className="project-carousel">
+        {/* Left Button for Desktop Users */}
+        <button
+          className="nav-button left"
+          onClick={() => handleSwipe("right")}
+        >
+          ◀
+        </button>
+
         <AnimatePresence exitBeforeEnter>
           <motion.div
             key={currentProjectIndex}
@@ -79,6 +87,14 @@ function Projects() {
             <p>{projects[currentProjectIndex].description}</p>
           </motion.div>
         </AnimatePresence>
+
+        {/* Right Button for Desktop Users */}
+        <button
+          className="nav-button right"
+          onClick={() => handleSwipe("left")}
+        >
+          ▶
+        </button>
       </div>
     </section>
   );

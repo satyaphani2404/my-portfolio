@@ -7,13 +7,13 @@
 }
 
 .project-carousel {
-  width: 300px; /* Define the card width */
-  height: 400px; /* Define the card height */
+  position: relative;
+  width: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
 }
 
 .project-card {
@@ -25,7 +25,7 @@
   width: 100%;
   max-width: 300px;
   transition: transform 0.3s ease;
-  position: absolute; /* So that each card overlaps the previous one */
+  position: absolute;
 }
 
 .project-card img {
@@ -42,4 +42,31 @@
 .project-card p {
   font-size: 1rem;
   color: #555;
+}
+
+/* Navigation buttons */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  user-select: none;
+}
+
+.nav-button.left {
+  left: 0;
+}
+
+.nav-button.right {
+  right: 0;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }

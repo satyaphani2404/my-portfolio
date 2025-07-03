@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>P BALA VENAKATA SATYA PHANINDRA • Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-neutral-900 text-neutral-100 antialiased selection:bg-indigo-600 selection:text-white" style="font-family:'Inter',sans-serif;">
+  <!-- Particles BG -->
+  <div id="particles-js" class="absolute inset-0 -z-10"></div>
+
+  <!-- Nav -->
+  <header class="fixed top-0 inset-x-0 backdrop-blur border-b border-white/10 z-50">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#" class="text-lg font-semibold tracking-tight hover:text-indigo-400 transition-colors">Satya Phanindra</a>
+      <div class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
+	<a href="#publications" class="hover:text-indigo-400 transition-colors">Publications</a>
+        <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 md:pt-40 text-center flex flex-col items-center px-6">
+    <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-tight max-w-5xl opacity-0 translate-y-8 transition-all duration-700" id="hero-title">
+      P BALA VENAKATA SATYA PHANINDRA
+    </h1>
+    <p class="mt-4 text-lg md:text-2xl font-medium text-indigo-400">Data Engineer| Cloud Data Engineer (GCP/Azure) | ETL/Data Platform Engineer | SQL Developer with Cloud Data Stack</p>
+    <p class="mt-6 max-w-2xl mx-auto text-neutral-400 opacity-0 translate-y-8 transition-all duration-700 delay-150" id="hero-desc">
+      Delivering robust, cloud-native data solutions that unlock insights and efficiency.
+    </p>
+    <div class="mt-10 flex gap-4 opacity-0 translate-y-8 transition-all duration-700 delay-300" id="hero-cta">
+      <a href="#contact" class="px-6 py-3 rounded-md bg-indigo-600 hover:bg-indigo-500 transition-colors">Hire Me</a>
+      <a href="https://drive.google.com/file/d/17cR9u9lRW2oIim-9ecLtMjIbssmT81eJ/view" target="_blank" class="px-6 py-3 rounded-md border border-white/20 hover:border-indigo-400 transition-colors">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto mt-32 md:mt-40 px-6 grid md:grid-cols-2 gap-12 items-start">
+    <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=900&q=80"
+         alt="Satya Phanindra profile portrait" class="rounded-2xl object-cover w-full h-72 md:h-96 shadow-xl shadow-indigo-500/20">
+    <div>
+      <h2 class="text-3xl font-semibold tracking-tight mb-4">Professional Summary</h2>
+      <p class="text-neutral-400 leading-relaxed">
+        Experienced Data Engineer with <span class="text-indigo-400 font-medium">3.10 years</span> at Tata Consultancy Services, specializing in
+        Azure Data Factory, Databricks and PySpark. Certified on Google Cloud and Applied Data Science, I’m passionate about
+        automation, data quality and performance optimization within cloud environments.
+      </p>
+      <ul class="mt-6 space-y-3">
+        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-indigo-400 shrink-0"></i>Hyderabad</li>
+        <li class="flex items-start gap-3"><i data-lucide="phone" class="w-5 h-5 text-indigo-400 shrink-0"></i><a href="tel:+918106854418" class="hover:text-indigo-400">+91 81068 54418</a></li>
+        <li class="flex items-start gap-3"><i data-lucide="mail" class="w-5 h-5 text-indigo-400 shrink-0"></i><a href="mailto:satya.phani2k@gmail.com" class="hover:text-indigo-400">satya.phani2k@gmail.com</a></li>
+        <li class="flex items-start gap-3"><i data-lucide="linkedin" class="w-5 h-5 text-indigo-400 shrink-0"></i><a href="https://linkedin.com/in/satya-phanindra-p-8881531a4" target="_blank" rel="noopener" class="hover:text-indigo-400">LinkedIn Profile</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-6xl mx-auto mt-32 md:mt-40 px-6">
+    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-center">Professional Experience</h2>
+    <div class="relative pl-6 before:absolute before:inset-y-0 before:left-3 before:w-px before:bg-white/10">
+      <!-- TCS -->
+      <div class="relative pb-10 group">
+        <span class="absolute -left-0.5 top-2 w-3 h-3 rounded-full bg-indigo-500"></span>
+        <div class="ml-6">
+          <h3 class="text-xl font-semibold">Data Engineer · Tata Consultancy Services</h3>
+          <p class="text-sm text-neutral-400 mb-4">Hyderabad · Aug&nbsp;2021 – Present</p>
+          <ul class="list-disc pl-5 space-y-2 text-neutral-300">
+            <li>Designed scalable pipelines with ADF & Databricks; cut execution time<span class="text-indigo-400 font-medium"> 50 %</span>.</li>
+            <li>Migrated legacy workflows to Azure, boosting uptime to 99.9 % & cutting costs 20 %.</li>
+            <li>Unified customer data platform → analytics precision up <span class="text-indigo-400 font-medium">40 %</span>.</li>
+            <li>Implemented custom data-quality & real-time CDC logic for continuous updates.</li>
+            <li>Contributed to <span class="text-indigo-400 font-medium">$1 M+</span> cost savings through data-driven optimization.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- NetZero AQUA -->
+      <div class="relative pb-10 group">
+        <span class="absolute -left-0.5 top-2 w-3 h-3 rounded-full bg-indigo-500"></span>
+        <div class="ml-6">
+          <h3 class="text-xl font-semibold">Associate Data Scientist (Intern) · NetZero AQUA</h3>
+          <p class="text-sm text-neutral-400 mb-4">Hyderabad · 2020 – 2021</p>
+          <ul class="list-disc pl-5 space-y-2 text-neutral-300">
+            <li>Built ML models forecasting feed & water quality for aquaculture.</li>
+            <li>Created interactive Power BI dashboards, driving data-driven farm decisions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-7xl mx-auto mt-32 md:mt-40 px-6">
+    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-center">Notable Projects</h2>
+	
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Mainframe Data Automation & Self-Service Platform -->
+<article class="group border border-white/10 rounded-xl overflow-hidden hover:-translate-y-1.5 transition-all">
+    <img src="https://cloud.google.com/static/mainframe-connector/docs/images/how-mainframe-connector-works.png" alt="GCP Mainframe Dataflow Pipeline" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500 bg-white">
+   <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Mainframe Data Automation & Self-Service Platform (POC)</h3>
+    <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+      Led the design and implementation of a cloud-native GCP-based platform to automate mainframe data workflows and enable real-time delivery via a self-service UI.
+    </p>
+    <ul class="text-sm text-indigo-400 list-disc pl-5 space-y-1">
+      <li>Google Cloud (Dataflow, Cloud Functions, Cloud Storage)</li>
+      <li>Python (Flask) · React.js · Python RPA</li>
+      <li>Prompt Engineering · Real-time Data Delivery</li>
+    </ul>
+  </div>
+</article>
+
+      <!-- Data Marketplace -->
+      <article class="group border border-white/10 rounded-xl overflow-hidden hover:-translate-y-1.5 transition-all">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Data Marketplace" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Data Marketplace</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            Spark-based ETL pipelines (ADF + Databricks) reduced BI prep time 80 %.
+          </p>
+          <span class="inline-flex items-center gap-2 text-indigo-400 text-sm">
+            Azure · PySpark · CDC
+          </span>
+        </div>
+      </article>
+      <!-- Operational Data Source -->
+      <article class="group border border-white/10 rounded-xl overflow-hidden hover:-translate-y-1.5 transition-all">
+        <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=900&q=80" alt="Operational Data Source" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Operational Data Source</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            Built bronze-silver-gold architecture with automated CI/CD deployments.
+          </p>
+          <span class="inline-flex items-center gap-2 text-indigo-400 text-sm">
+            Azure Data Lake · Databricks
+          </span>
+        </div>
+      </article>
+      <!-- Database Migration -->
+      <article class="group border border-white/10 rounded-xl overflow-hidden hover:-translate-y-1.5 transition-all">
+        <img src="https://docs.oracle.com/en/cloud/iaas-classic/compute-iaas-cloud/migrate-oci/img/dipc_migration_architecture.png" alt="Database Migration Project" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Oracle → Oracle Cloud Migration</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            Zero-downtime migration while improving performance & scalability.
+          </p>
+          <span class="inline-flex items-center gap-2 text-indigo-400 text-sm">
+            Oracle 11g → 19c · PL/SQL
+          </span>
+        </div>
+      </article>
+      <!-- Aqua-bot -->
+      <article class="group border border-white/10 rounded-xl overflow-hidden hover:-translate-y-1.5 transition-all">
+        <img src="https://degrii.com/cdn/shop/files/Aquabot_WAVE_Pro_Robotic_pool_cleaners_1280x1280_4.png?v=1746587546" alt="Aqua-bot Project" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Aqua-bot</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+            ML-driven forecasts & Power BI dashboards boosted aquafarm productivity.
+          </p>
+          <span class="inline-flex items-center gap-2 text-indigo-400 text-sm">
+            Python · Power BI
+          </span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-7xl mx-auto mt-32 md:mt-40 px-6">
+  <h2 class="text-3xl font-semibold tracking-tight mb-10 text-center">Tech Stack</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- Azure & GCP -->
+  <div class="group [perspective:1000px]">
+    <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <!-- Front -->
+      <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+        <i data-lucide="cloud" class="w-6 h-6 text-indigo-400"></i>
+        <h3 class="text-lg font-semibold text-white">Azure & GCP</h3>
+        <p class="text-sm text-neutral-400">Cross-cloud data pipelines and orchestration.</p>
+      </div>
+      <!-- Back -->
+      <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+        <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+        <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+          <li>ADF Pipelines with CDC</li>
+          <li>Databricks notebooks</li>
+          <li>BigQuery data modeling</li>
+          <li>CI/CD in Azure DevOps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+	<!-- Prompt Engineering -->
+<div class="group [perspective:1000px]">
+  <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <!-- Front -->
+    <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+      <i data-lucide="message-square-code" class="w-6 h-6 text-indigo-400"></i>
+      <h3 class="text-lg font-semibold text-white">Prompt Engineering</h3>
+      <p class="text-sm text-neutral-400">Designing effective prompts for accurate and creative LLM outputs.</p>
+    </div>
+    <!-- Back -->
+    <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+      <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+      <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+        <li>Few-shot & zero-shot prompting</li>
+        <li>Chain-of-thought reasoning</li>
+        <li>Prompt tuning for tasks (extraction, summarization)</li>
+        <li>LLM instruction interpretation & iteration</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <!-- SQL & Oracle -->
+  <div class="group [perspective:1000px]">
+    <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+        <i data-lucide="database" class="w-6 h-6 text-indigo-400"></i>
+        <h3 class="text-lg font-semibold text-white">SQL & Oracle</h3>
+        <p class="text-sm text-neutral-400">Legacy to cloud SQL & data quality.</p>
+      </div>
+      <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+        <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+        <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+          <li>Oracle 11g to 19c migration</li>
+          <li>Optimized PL/SQL procedures</li>
+          <li>Real-time SQL CDC queries</li>
+          <li>BigQuery & Spark SQL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Python & PySpark -->
+  <div class="group [perspective:1000px]">
+    <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+        <i data-lucide="code" class="w-6 h-6 text-indigo-400"></i>
+        <h3 class="text-lg font-semibold text-white">Python & PySpark</h3>
+        <p class="text-sm text-neutral-400">ETL, ML models, data transformation.</p>
+      </div>
+      <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+        <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+        <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+          <li>Modular PySpark notebooks</li>
+          <li>ML models for aquaculture</li>
+          <li>UDFs & transformations</li>
+          <li>Automated ingestion flows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delta Lake -->
+  <div class="group [perspective:1000px]">
+    <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+        <i data-lucide="layers" class="w-6 h-6 text-indigo-400"></i>
+        <h3 class="text-lg font-semibold text-white">Delta Lake</h3>
+        <p class="text-sm text-neutral-400">Scalable Lakehouse architecture.</p>
+      </div>
+      <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+        <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+        <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+          <li>Bronze-Silver-Gold layering</li>
+          <li>Time-travel & schema evolution</li>
+          <li>Data quality enforcement</li>
+          <li>CDC with live updates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CI/CD & Docker -->
+  <div class="group [perspective:1000px]">
+    <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+        <i data-lucide="settings" class="w-6 h-6 text-indigo-400"></i>
+        <h3 class="text-lg font-semibold text-white">CI/CD & Docker</h3>
+        <p class="text-sm text-neutral-400">Automated, reliable deployment workflows.</p>
+      </div>
+      <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+        <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+        <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+          <li>Azure DevOps integration</li>
+          <li>Version-controlled releases</li>
+          <li>Automated pipeline promotion</li>
+          <li>Docker for reproducibility</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Power BI -->
+  <div class="group [perspective:1000px]">
+    <div class="relative h-64 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <div class="absolute inset-0 bg-neutral-800 border border-white/10 rounded-xl p-5 flex flex-col justify-center items-start gap-4" style="backface-visibility: hidden;">
+        <i data-lucide="bar-chart-2" class="w-6 h-6 text-indigo-400"></i>
+        <h3 class="text-lg font-semibold text-white">Power BI</h3>
+        <p class="text-sm text-neutral-400">Interactive dashboards & insights.</p>
+      </div>
+      <div class="absolute inset-0 bg-indigo-600/10 border border-indigo-400 rounded-xl p-5 [transform:rotateY(180deg)]" style="backface-visibility: hidden;">
+        <h4 class="text-white font-semibold mb-2">Key Highlights</h4>
+        <ul class="list-disc pl-5 text-sm text-neutral-200 space-y-1">
+          <li>Real-time metrics tracking</li>
+          <li>Farm analytics dashboards</li>
+          <li>Decision-making enablement</li>
+          <li>R&D visuals for aquaculture</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+    
+  </section>
+
+  <!-- Education & Certifications -->
+  <section class="max-w-6xl mx-auto mt-32 md:mt-40 px-6">
+    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-center">Education & Certifications</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border border-white/10 rounded-xl p-6">
+        <h3 class="text-xl font-semibold mb-2">B.Tech – Information Technology</h3>
+        <p class="text-neutral-400">Gokaraju Rangaraju Institute of Engineering & Technology, 2017 – 2021</p>
+      </div>
+      <div class="border border-white/10 rounded-xl p-6 flex flex-col gap-3">
+        <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i>Google Cloud Professional Data Engineer</span>
+        <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i>Google Cloud Associate Cloud Engineer</span>
+        <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i>Applied Data Science Specialist – WQU</span>
+      </div>
+    </div>
+  </section>
+<section id="publications" class="max-w-6xl mx-auto mt-32 md:mt-40 px-6">
+    <h2 class="text-3xl font-semibold tracking-tight mb-10 text-center">Research & Publications</h2>
+    <div class="border border-white/10 rounded-xl p-6">
+      <h3 class="text-xl font-semibold mb-2">Brain Tumor Classification Using Convolutional Recurrent Neural Network</h3>
+      <p class="text-neutral-400 mb-3">
+        Developed a deep learning-based classification system combining CNN and RNN layers to classify brain tumors. Published on ResearchGate.
+      </p>
+      <a href="https://www.researchgate.net/scientific-contributions/P-Bala-Venakata-Satya-Phanindra-2203045762" target="_blank" class="text-indigo-400 hover:underline text-sm">View on ResearchGate</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto mt-32 md:mt-40 px-6 text-center">
+    <h2 class="text-3xl font-semibold tracking-tight mb-6">Let’s Connect</h2>
+    <p class="max-w-lg mx-auto text-neutral-400">
+      Interested in collaborating or have a challenge that needs data-driven insights? Let’s talk!
+    </p>
+    <a href="mailto:satya.phani2k@gmail.com" class="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-md bg-indigo-600 hover:bg-indigo-500 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400">
+      <i data-lucide="send" class="w-5 h-5"></i>
+      Say Hello
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-32 py-10 text-center text-neutral-500 text-sm border-t border-white/10">
+    © <span id="year"></span> Satya Phanindra · Crafted with passion.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-in sequence
+    window.addEventListener('load',()=>['hero-title','hero-desc','hero-cta'].forEach(id=>{
+      document.getElementById(id).classList.remove('opacity-0','translate-y-8');
+    }));
+
+    // Particles
+    particlesJS('particles-js',{
+      particles:{number:{value:60},color:{value:'#6366f1'},size:{value:2},move:{speed:1}},
+      interactivity:{events:{onhover:{enable:true,mode:'repulse'}}},retina_detect:true
+    });
+
+    // Chart
+    new Chart(document.getElementById('skillsChart'),{
+      type:'doughnut',
+      data:{
+        labels:['Azure','GCP','PySpark','SQL','Power BI'],
+        datasets:[{data:[90,80,85,95,75],backgroundColor:['#4f46e5','#4338ca','#3730a3','#312e81','#1e1b4b'],borderWidth:0}]
+      },
+      options:{plugins:{legend:{display:false}},cutout:'65%'}
+    });
+
+    // Icons
+    lucide.createIcons({attrs:{class:'stroke-1.5'}});
+    // Year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
